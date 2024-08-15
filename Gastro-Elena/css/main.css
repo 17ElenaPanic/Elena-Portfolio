@@ -1,0 +1,345 @@
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+p,
+a,
+img,
+i,
+ul,
+li,
+form,
+label,
+article,
+canvas,
+footer,
+header,
+menu,
+nav,
+section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  line-height: 1;
+}
+
+ul {
+  list-style: none;
+}
+
+a img {
+  border: none;
+}
+
+article,
+footer,
+header,
+main,
+nav,
+section {
+  display: block;
+}
+
+button {
+  background: none;
+  border: none;
+}
+button:focus {
+  outline: none;
+  box-shadow: none;
+}
+button:active {
+  outline: none;
+  box-shadow: none;
+}
+
+input {
+  background: none;
+  border: none;
+}
+input:focus {
+  outline: none;
+  box-shadow: none;
+}
+input:active {
+  outline: none;
+  box-shadow: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  color: initial;
+  text-decoration: none;
+}
+
+select:focus {
+  outline: none;
+  box-shadow: none;
+}
+select:active {
+  outline: none;
+  box-shadow: none;
+}
+
+@font-face {
+  font-family: "Nanum Regular";
+  src: url(../fonts/NanumMyeongjo-Regular.woff2);
+}
+@font-face {
+  font-family: "Nanum Bold";
+  src: url(../fonts/NanumMyeongjo-Bold.woff2);
+}
+@font-face {
+  font-family: "Nanum Extra Bold";
+  src: url(../fonts/NanumMyeongjo-ExtraBold.woff2);
+}
+@font-face {
+  font-family: "Courgette Regular";
+  src: url(../fonts/Courgette-Regular.woff);
+}
+@font-face {
+  font-family: "Freeman Regular";
+  src: url(../fonts/Freeman-Regular.woff2);
+}
+header {
+  display: flex;
+  padding: 10px 30px;
+  background-color: #000;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 20;
+}
+header nav a {
+  color: #fff;
+  font-family: "Nanum Regular";
+  text-transform: uppercase;
+  margin: 0 15px;
+}
+
+main .hero-shot {
+  background-image: url(../images/viber_image_2024-04-27_12-24-53-695.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: calc(100vh - 45px);
+  background-position: center;
+  position: relative;
+}
+main .hero-shot .hero-overlay {
+  background-color: #000;
+  opacity: 0.75;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+main .reserve-table {
+  padding: 30px 0;
+  width: 100%;
+}
+main .reserve-table h3 {
+  font-family: "Nanum Extra Bold";
+  font-size: 20px;
+  text-transform: uppercase;
+  -moz-tab-size: 4;
+    -o-tab-size: 4;
+       tab-size: 4;
+  letter-spacing: 0.15px;
+  margin: 10px auto;
+  text-align: center;
+}
+main .reserve-table h3:after {
+  content: "";
+  display: block;
+  width: 80%;
+  height: 2px;
+  border-radius: 30px;
+  background-color: #d90429;
+  margin: 5px auto;
+}
+main .reserve-table form {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #000;
+}
+main .reserve-table .input-pair {
+  width: 50%;
+  padding: 15px;
+  color: #fff;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+}
+main .reserve-table .input-pair input {
+  color: #fff;
+  font-family: "Nanum Bold";
+}
+main .reserve-table .input-pair.pair-short {
+  display: flex;
+  align-items: center;
+}
+main .reserve-table .input-pair input[type=text] {
+  max-width: 300px;
+  width: 100%;
+  border-bottom: 1px solid #fff;
+  padding: 5px 0;
+  caret-color: #d90429;
+}
+main .reserve-table .input-pair input[type=text]::-moz-placeholder {
+  color: #fff;
+  font-size: 14px;
+  line-height: 20px;
+}
+main .reserve-table .input-pair input[type=text]::placeholder {
+  color: #fff;
+  font-size: 14px;
+  line-height: 20px;
+}
+main .reserve-table .input-pair input[type=text]:focus-within {
+  border-bottom: 1px solid #d90429;
+}
+main .reserve-table .input-pair input[type=date] {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(3%) saturate(13%) hue-rotate(81deg) brightness(106%) contrast(106%);
+}
+main .reserve-table .input-pair input[type=range] {
+  width: 150px;
+  -webkit-appearance: none;
+  background-color: #fff;
+  border-radius: 10px;
+}
+main .reserve-table input[type=submit] {
+  background-color: #d90429;
+  color: #fff;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+main .reserve-table .submit {
+  padding: 5px 30px;
+  border-radius: 10px;
+  margin: 10px auto;
+}
+main .product-menu h3 {
+  display: flex;
+  font-family: "Courgette Regular";
+  font-weight: bold;
+  font-size: 25px;
+  color: #d90429;
+  justify-content: center;
+  cursor: pointer;
+}
+main .product-menu h3:before, main .product-menu h3:after {
+  content: "";
+  flex: 1 1;
+  border-bottom: 2px solid;
+  margin: auto;
+}
+main .product-menu h3:before {
+  margin-left: 480px;
+  margin-right: 8px;
+}
+main .product-menu h3:after {
+  margin-right: 480px;
+  margin-left: 8px;
+}
+main .product-menu .second-heading {
+  font-size: 35px;
+  color: #000;
+  text-align: center;
+  font-family: "Freeman regular";
+  padding-top: 20px;
+  cursor: pointer;
+}
+main .product-menu .food-list {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+main .product-menu .food-list .food-type {
+  display: flex;
+  padding-bottom: 20px;
+}
+main .product-menu .food-list .food-type .icon-img {
+  cursor: pointer;
+  margin: 0 5px;
+}
+main .product-menu .food-list .food-type .food {
+  display: flex;
+  flex-direction: column;
+  font-family: "Freeman regular";
+  cursor: pointer;
+}
+main .product-menu .food-list .food-type .food .food-item {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: #757575;
+}
+main .product-menu .food-list .food-type .food .typeOfFood {
+  font-weight: bold;
+  color: #000;
+}
+main .product-menu .allFoodContainer {
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+main .product-menu .allFoodContainer .food-container {
+  width: 500px;
+  padding: 0 20px;
+}
+main .product-menu .allFoodContainer .food-container .breakfast-container {
+  display: flex;
+  padding-bottom: 20px;
+}
+main .product-menu .allFoodContainer .food-container .breakfast-container .foodImg {
+  cursor: pointer;
+  margin-right: 20px;
+}
+main .product-menu .allFoodContainer .food-container .breakfast-container .description {
+  display: flex;
+  flex-direction: column;
+}
+main .product-menu .allFoodContainer .food-container .breakfast-container .description p {
+  padding-top: 8px;
+  font-style: italic;
+  font-family: "Nanum Bold";
+  font-size: 15px;
+  cursor: pointer;
+}
+main .product-menu .allFoodContainer .food-container .breakfast-container .description .price-container {
+  display: flex;
+  border-bottom: 1px solid rgb(205, 200, 200);
+  padding-bottom: 8px;
+  align-items: center;
+}
+main .product-menu .allFoodContainer .food-container .breakfast-container .description .price-container h2 {
+  font-size: 15px;
+  font-weight: bold;
+  font-family: "Freeman regular";
+  letter-spacing: 0.8px;
+  cursor: pointer;
+}
+main .product-menu .allFoodContainer .food-container .breakfast-container .description .price-container span {
+  margin-left: auto;
+  color: #d90429;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}/*# sourceMappingURL=main.css.map */

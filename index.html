@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="css/main.css">
+    <link type="icon" rel="icon" href="icon">
+    <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <title>Elena's Portfolio</title>
+</head>
+<body>
+    <!-- HEADER NAV-BAR-LOGO-->
+    <header>
+        <a href="index.html">
+            <img class="logo-img" src="images/logo.png" alt="logo" width="230">
+        </a>
+        <button onclick=" firstcrollToSection()"   class="nav-btn">About</button>
+        <button onclick="secondscrollToSection()"  class="nav-btn">Skills</button>
+        <button onclick="thirdscrollToSection()"   class="nav-btn">Experiance</button>
+        <button onclick="fourthscrollToSection()"  class="nav-btn">Contact</button>
+        <a class="button gradient-border" href="mailto:elenapanic@gmail.com">
+            <span><i class="far fa-envelope-open"></i> Email Me Here</span> <span>elenapanic@gmail.com</span>
+        </a>
+    </header>
+    <main>
+        <!-- 1.FIRST SECTION - INFO-ABOUT -->
+        <div class="description-section" id="firstTargetSection" >
+            <div class="info-section">
+                <h2>Hello I'M</h2>
+                <h1 class="name-heading">ELENA PANIĆ</h1>
+                <div class="typewriter">
+                    <h1 id="typewriter-text"></h1>
+                </div>
+                <p class="third-prg">I'm excited about the future of web development and am always looking for new
+                    challenges and opportunities to grow. Let's build something amazing together!
+                </p>
+                <div class="contact-me">
+                    <p class="second-prg">KEEP CONNECTED: </p>
+                    <div class="social-media">
+                        <a href="https://www.instagram.com/elena_panic.petrov/">  <i class="fa-brands fa-instagram"></i></a>
+                        <i class="fa-brands fa-twitter"></i>
+                        <a href="https://www.tiktok.com/@elena_panic.petrov"> <i class="fa-brands fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="image-section">
+                <img class="girl-image" src="images/profile-picture.png" alt="girl" width="900" height="500">
+            </div>
+        </div>
+        <div class="skills"  >
+            <div class="first-circle">
+                <div class="skill-type"> <span class="percentage">80%</span> <span class="info">Web Development</span>
+                </div>
+            </div>
+            <div class="second-circle">
+                <div class="skill-type"><span class="percentage">80%</span> <span class="info">Web Design</span></div>
+            </div>
+            <div class="third-circle">
+                <div class="skill-type"><span class="percentage">50%</span> <span class="info">App Design</span></div>
+            </div>
+            <div class="fourth-circle">
+                <div class="skill-type"> <span class="percentage">60%</span> <span class="info">UI/UX Design</span>
+                </div>
+            </div>
+        </div>
+        <!-- 2.SECOND SECTION - SKILLS -->
+        <h2 class="heading-text">Why Choose Me?</h2>
+        <div class="skills-container" id="secondTargetSection">
+            <div class="skills-info">
+                <div class="skills-description">
+                    <div class="skill">
+                        <div class="circle-icon">
+                            <img src="images/idea (1).png" alt="creativity icon" width="60" height="60">
+                        </div>
+                        <div class="description">
+                            <h2>Creative Design</h2>
+                            <p>Clean, modern design - optimized for performance, search engines, and converting users to
+                                customers.</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="skills-description">
+                    <div class="skill">
+                        <div class="circle-icon">
+                            <img src="images/abstract.png" alt="modern icon" width="50" height="50">
+                        </div>
+
+                        <div class="description">
+                            <h2>Modern Design</h2>
+                            <p>Combined all the latest technologies to a progressive website.</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="skills-description">
+                    <div class="skill">
+                        <div class="circle-icon">
+                            <img src="images/cell-phone.png" alt="cell phone" width="60" height="60">
+                        </div>
+
+                        <div class="description">
+                            <h2>Responsive Design</h2>
+                            <p>A responsive design makes your website accessible to all users, regradless of their
+                                device.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="skill-container">
+                <div class="skills-section">
+                    <h2 class="skill-heading"> HTML/CSS/SASS</h2>
+                    <div class="progress">
+                        <div class="progress-done" data-target-width="95">
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-section">
+                    <h2 class="skill-heading">JAVASCRIPT</h2>
+                    <div class="progress">
+                        <div class="progress-done" data-target-width="90"></div>
+                    </div>
+                </div>
+                <div class="skills-section">
+                    <h2 class="skill-heading">REACT</h2>
+                    <div class="progress">
+                        <div class="progress-done" data-target-width="80"></div>
+                    </div>
+                </div>
+                <div class="skills-section">
+                    <h2 class="skill-heading">TYPESCRIPT</h2>
+                    <div class="progress">
+                        <div class="progress-done" data-target-width="70"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <!-- 3.THIRD SECTION - IMAGE SLIDER AUTOMATICALLY -->
+         <div class="slideshow-container" id="thirdTargetSection">
+            <div class="mySlides">
+                <div class="main-container">
+                    <img src="images/Yoga Final Image.png" alt="">
+                    <div class="overlay">
+                        <h1>YOGA SHOP</h1>
+                        <h2>This project demonstrates my ability to create a modern, responsive, and interactive online shopping experience, integrating essential features for a smooth user journey from browsing to checkout.</h2>
+                            <div class="btn-container">
+                                <a href="3.Yoga-Elena/index.html">
+                                   <button>VIEW WEBSITE</button> </a>
+                                <button>GITHUB</button>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mySlides">
+                <div class="main-container">
+                    <img src="images/Final Mobile Store Image.png" alt="">
+                    <div class="overlay">
+                        <h1>MOBILE STORE</h1>
+                        <h2>This project showcases my expertise in building a responsive e-commerce website with a focus on user experience, performance, and scalability. The platform allows users to effortlessly browse products, compare features, and make secure purchases.</h2>
+                            <div class="btn-container">
+                                <a href="2.New Mobile Store-Responsive-Elena/index1.html">
+                                    <button>VIEW WEBSITE</button> </a>
+                                <button>GITHUB</button>
+                            </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="mySlides">
+                <div class="main-container">
+                    <img src="images/Pet Shop Final Image.png" alt="">
+                    <div class="overlay">
+                        <h1>PET SHOP</h1>
+                        <h2>The platform features a detailed product catalog, customer reviews, and personalized recommendations, ensuring that every pet owner finds exactly what they need.</h2>
+                            <div class="btn-container">
+                                <a href="10.Pet Shop Елена/Pet Shop/index.html">
+                                    <button>VIEW WEBSITE</button> </a>
+                                <button>GITHUB</button>
+                            </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="mySlides">
+                <div class="main-container">
+                    <img src="images/Menu Final Image.png" alt="">
+                    <div class="overlay">
+                        <h1>FOOD RESTAURANT MENU</h1>
+                        <h2>The digital menu allows customers to browse through a variety of dishes, view detailed descriptions, images, and nutritional information, and even place orders directly from their devices.</h2>
+                            <div class="btn-container">
+                                <a href="Gastro-Elena/index.html">
+                                    <button>VIEW WEBSITE</button> </a>
+                        <button>GITHUB</button>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)"><img src="images/swipe.png" alt="" width="50" height="50"></a>
+            <a class="next" onclick="plusSlides(1)"><img src="images/swipe (1).png" alt="" width="50" height="50"></a>
+        </div>
+         <!-- 4.FOURTH SECTION - SERVICES -->
+        <h2 class="heading-text">My Services</h2>
+        <div class="main-section">
+            <div class="container">
+                <div class="width-50">
+                    <div class="service-list">
+                        <div class="first-part">
+                            <img src="images/web-development (1).png" alt="" width="40" height="40">
+                            <img class="image-hover" src="images/web-development (2).png" alt="" width="40" height="40">
+                            <h3>Web Development</h3>
+                        </div>
+
+                        <p>
+                             My expertise in creating responsive, visually appealing 
+                             websites ensures that users have an intuitive and engaging experience 
+                             across all devices.</p>
+                    </div>
+                </div>
+                <div class="width-50">
+                    <div class="service-list">
+                        <div class="first-part">
+                            <img src="images/web-design.png" alt="" width="45" height="45">
+                            <img class="image-hover" src="images/web-design (1).png" alt="" width="45" height="45">
+                            <h3>Web Design</h3>
+                        </div>
+
+                        <p>My strong understanding of design principles, including typography, color theory, and layout,
+                             allows you to craft aesthetically pleasing and functional websites</p>
+                    </div>
+                </div>
+                <div class="width-50">
+                    <div class="service-list">
+                        <div class="first-part">
+                            <img src="images/ux-design.png" alt="" width="45" height="45">
+                            <img class="image-hover" src="images/ux-design (1).png" alt="" width="45" height="45">
+                            <h3>UI/UX Design</h3>
+                        </div>
+
+                        <p>My ability to balance usability with visual design results in interfaces 
+                            that are both engaging and easy to navigate, 
+                            enhancing overall user satisfaction.</p>
+                    </div>
+                </div>
+                <div class="width-50">
+                    <div class="service-list">
+                        <div class="first-part">
+                            <img src="images/app-store.png" alt="" width="40" height="40">
+                            <img class="image-hover" src="images/app-store (1).png" alt="" width="40" height="40">
+                            <h3>App Design</h3>
+                        </div>
+
+                        <p>My ability to design visually appealing and functional apps ensures 
+                            a seamless experience across different devices and platforms.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <!-- 5.FIFTH SECTION - CONTACT FORM -->
+    </main>
+    <footer>
+        <section class="contact" id="fourthTargetSection">
+            <div class="content">
+                <h2>Let's Get In Touch</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+            </div>
+            <div class="container">
+                <div class="contactInfo">
+                    <div class="box">
+                        <div class="icon"><a href="https://www.google.com/maps/place/Hristo+Tatarchev+19,+Skopje+1000/@41.9792843,21.4391038,17z/data=!3m1!4b1!4m6!3m5!1s0x135415dac3589789:0x34c2798daa230864!8m2!3d41.9792843!4d21.4416787!16s%2Fg%2F11k6nzbw_f?entry=ttu"><i class="fa-solid fa-location-dot"></i></a></div>
+                        <div class="text">
+                            <h3>Address</h3>
+                            <p>
+                                Arhiepiskop Dositej 34/22,<br>Skopje,<br>Macedonia</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon"><i class="fa-solid fa-phone"></i></div>
+                        <div class="text">
+                            <h3>Phone</h3>
+                            <p>02-3 115 402</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon"><a href="mailto:elenapanic@gmail.com"><i class="fa-solid fa-envelope"></i></a></div>
+                        <div class="text">
+                            <h3>Email</h3>
+                            <p>info@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contactForm">
+                    <form>
+                        <h2>Send Message</h2>
+                        <div class="inputBox">
+                            <input type="text" required="required">
+                            <span>Full Name</span>
+                        </div>
+                        <div class="inputBox">
+                            <input type="text" required="required">
+                            <span>Email</span>
+                        </div>
+                        <div class="inputBox">
+                            <textarea required="required"></textarea>
+                            <span class="message">TYPE YOUR MESSAGE...</span>
+                        </div>
+                        <div class="inputBox">
+                            <input type="submit" name="" id="" value="Send">
+
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,215 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: "Lato-Regular";
+  src: url(fonts/Lato-Regular.wolf2);
+}
+@font-face {
+  font-family: "Lato-Light";
+  src: url(fonts/Lato-Light.wolf2);
+}
+@font-face {
+  font-family: "Lato-Bold";
+  src: url(fonts/Lato-Bold.wolf2);
+}
+@font-face {
+  font-family: "Lusitana-Regular";
+  src: url(fonts/Lusitana-Regular.wolf2);
+}
+@font-face {
+  font-family: "Lusitana-Bold";
+  src: url(fonts/Lusitana-Bold.wolf2);
+}
+@font-face {
+  font-family: "Wix-Italic";
+  src: url(fonts/WixMadeforText-Italic-VariableFont_wght.woff2);
+}
+@font-face {
+  font-family: "Wix-Variable";
+  src: url(fonts/WixMadeforText-VariableFont_wght.woff2);
+}
+a:hover {
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(219, 244, 245);
+  padding: 10px 25px;
+}
+header nav {
+  display: flex;
+  font-size: 20px;
+  align-items: center;
+}
+header button {
+  color: #002B5B;
+  font-family: "Wix-Variable";
+  font-weight: bold;
+  border: none;
+  background: transparent;
+  padding: 0 3px;
+  height: 40px;
+  width: 90px;
+  letter-spacing: 1px;
+  font-size: 20px;
+  cursor: pointer;
+}
+header button:hover {
+  background-color: #8FE3CF;
+  border-radius: 7px;
+  padding: 5px 7px;
+}
+
+main p {
+  font-family: "Wix-Variable";
+  font-size: 18px;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+main .background-img {
+  background-size: cover;
+  max-width: 100%;
+}
+main .first-container {
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+main .first-container img {
+  text-align: center;
+}
+main .second-container {
+  display: flex;
+  justify-content: space-around;
+}
+main .second-container h2 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  font-family: "Wix-Variable";
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+main .third-container {
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+main .third-container img {
+  text-align: center;
+}
+main .second-section {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+main .second-section button {
+  background-color: #002B5B;
+  border-radius: 30px;
+  color: white;
+  font-family: "Wix-Variable";
+  font-weight: bold;
+  border-style: none;
+  padding: 7px;
+  width: 200px;
+  height: 50px;
+}
+main .second-section button:hover {
+  background-color: #8FE3CF;
+  color: #002B5B;
+  font-weight: bolder;
+  font-family: "Wix-Variable";
+}
+main .second-section .firstHeading {
+  text-align: center;
+  padding-bottom: 50px;
+  font-family: "Wix-Variable";
+  font-size: 22px;
+  font-weight: bold;
+  cursor: pointer;
+}
+main .second-section h2 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  font-family: "Wix-Variable";
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+main .btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+main .third-section {
+  display: flex;
+  justify-content: space-around;
+  margin: 50px 100px;
+}
+main .third-section .text-container {
+  background-color: #002B5B;
+  color: white;
+  padding-left: 30px;
+  padding-right: 400px;
+  padding-top: 100px;
+}
+main .third-section .text-container button {
+  border-radius: 0;
+  background-color: #FFB200;
+  width: 170px;
+  height: 45px;
+  padding: 7px;
+  color: white;
+  border-style: none;
+  font-weight: bolder;
+  font-family: Verdana;
+  letter-spacing: 1px;
+}
+main .fourth-section {
+  margin-top: 150px;
+}
+main .fourth-section h2 {
+  font-family: "Wix-Variable";
+  font-size: 22px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 40px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+main .fourth-section img {
+  margin: 0px 10%;
+}
+main .fourth-section p {
+  text-align: center;
+  align-items: center;
+  width: 30%;
+  margin: 0 35%;
+  padding-bottom: 20px;
+}
+main .fourth-section button {
+  background-color: #002B5B;
+  border-radius: 30px;
+  color: white;
+  font-family: "Wix-Variable";
+  font-weight: bold;
+  border-style: none;
+  padding: 7px;
+  width: 200px;
+  height: 50px;
+  margin: 50px calc((100% - 200px) / 2);
+}
+main .fourth-section button:hover {
+  background-color: #8FE3CF;
+  color: #002B5B;
+  font-weight: bolder;
+  font-family: "Wix-Variable";
+}/*# sourceMappingURL=main.css.map */

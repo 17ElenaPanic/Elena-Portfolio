@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gastro</title>
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="icon" type="image/ico" href="images/favicon.ico">
+</head>
+<body>
+  <header>
+    <a href=""><img src="images/gastro-logo.svg" alt="" width="124" height="22" alt="gastro logo"></a>
+    <nav>
+      <a href="#">Breakfast</a>
+    <a href="#">Lunch</a>
+  <a href="#">Dinner</a>
+<a href="#">Dessert</a></nav>
+  </header>
+  <main>
+    <div class="hero-shot">
+      
+      <div class="hero-overlay"></div>
+      </div>
+      <div class="reserve-table">
+      <h3>Reserve your table now!</h3>
+      <form>
+        <div class="input-pair">
+        <input type="text" placeholder="Name" required>
+        </div>
+        <div class="input-pair pair-short">
+          <p>Date:</p>
+          <input type="date" required id="textDate">
+        </div>
+         <div class="input-pair pair-short">
+          <p>Time:</p>
+         <input type="time" min="10:00" max="01:00" required>
+         </div>
+         <div class="input-pair">
+          <p>Number of people:<output id="value"></output>
+            <input id="people-input" type="range" min="1" max="20" value="1" required>
+            </p>
+         </div>
+         <input class="submit" type="submit" value="Reserve table">
+      </form>
+    </div>
+      <div class="product-menu">
+        <h3>Food Menu</h3>
+        <h2 class="second-heading">Most Popular Items</h2>
+        <div class="food-list">
+          <div class="food-type">
+            <img class="icon-img" src="images/mug-saucer-solid.svg" alt="mug-icon" width="70" height="50">
+            <div class="food">
+              <span class="food-item">Popular</span>
+              <span class="typeOfFood">Breakfast</span>
+            </div>
+          </div>
+          <div class="food-type">
+            <img class="icon-img" src="images/burger-solid.svg" alt="burger-icon" width="70" height="50">
+            <div class="food">
+              <span class="food-item">Special</span>
+              <span class="typeOfFood">Lunch</span>
+            </div>
+          </div>
+          <div class="food-type">
+            <img class="icon-img" src="images/utensils-solid.svg" alt="utensils-icon" width="70" height="50">
+            <div class="food">
+              <span class="food-item">Lovely</span>
+              <span class="typeOfFood">Dinner</span>
+            </div>
+          </div>
+        </div>
+        <div class="allFoodContainer">
+          <div class="food-container">
+            <div class="breakfast-container">
+              <img class="foodImg" src="images/avocadoSandwich.jpg" alt="avocadoSandwich" width="70" height="60">
+              <div class="description">
+                <div class="price-container">
+                  <h2>Avocado Sandwich</h2>
+                  <span>130$</span>
+                </div>
+                <p>Ingredients: wholegrain bread, slices Brie cheese, avocado, cranberries, small tomato.</p>
+              </div>
+            </div>
+            <div class="breakfast-container">
+              <img class="foodImg" src="images/donut.jpg" alt="donut" width="70" height="60">
+              <div class="description">
+                <div class="price-container">
+                  <h2>Donut</h2>
+                  <span>140$</span>
+                </div>
+                <p>Ingredients: cup milk, white vinegar, cup white sugar, egg, flour, salt.</p>
+              </div>
+            </div>
+            <div class="breakfast-container">
+              <img class="foodImg" src="images/pasta.jpg" alt="pasta" width="70" height="60">
+              <div class="description">
+                <div class="price-container">
+                  <h2>Pasta</h2>
+                  <span>155$</span>
+                </div>
+                <p>Ingredients: pasta, butter, garlic, tomato paste, tomato sauce, heavy cream.</p>
+              </div>
+            </div>
+            <div class="breakfast-container">
+              <img class="foodImg" src="images/fruitSalad.jpg" alt="fruitSalad" width="70" height="60">
+              <div class="description">
+                <div class="price-container">
+                  <h2>Fruit Salad</h2>
+                  <span>200$</span>
+                </div>
+                <p>Ingredients: pineapple, strawberries, kiwis, bananas, oranges, grapes, and blueberries.</p>
+              </div>
+            </div>
+          </div>
+          <div class="food-container">
+            <div class="breakfast-container">
+              <img class="foodImg" src="images/burger.jpg" alt="burger" width="70" height="60">
+              <div class="description">
+                <div class="price-container">
+                  <h2>Burger</h2>
+                  <span>129$</span>
+                </div>
+                <p>Ingredients: onion, beef mince, egg, oil, burger buns, salt.</p>
+              </div>
+            </div>
+            <div class="breakfast-container">
+              <img class="foodImg" src="images/fish.jpg" alt="fish" width="70" height="60">
+              <div class="description">
+                <div class="price-container">
+                  <h2>Fish</h2>
+                  <span>180$</span>
+                </div>
+                <p>Ingredients: flour, salt, black pepper, fish fillets, vegetable oil, lemon, tartar sauce.</p>
+              </div>
+            </div>
+            <div class="breakfast-container">
+              <img class="foodImg" src="images/mushroomSoup.jpg" alt="mushroomSoup" width="70" height="60">
+              <div class="description">
+                <div class="price-container">
+                  <h2>Mushroom Soup</h2>
+                  <span>220$</span>
+                </div>
+                <p>Ingredients: butter, onions, garlic, mushrooms, flour, cream, parsley.</p>
+              </div>
+            </div>
+            <div class="breakfast-container">
+              <img class="foodImg" src="images/pizza.jpg" alt="pizza" width="70" height="60">
+              <div class="description">
+                <div class="price-container">
+                  <h2>Pizza</h2>
+                  <span>150$</span>
+                </div>
+                <p>Ingredients: flour, tomato ketchup, onion, sugar, baking powder, olive oil, cheese, mushroom, oregano,
+                  mozzarella .</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="delivery"></div>
+      <div class="about"></div>
+  </main>
+  <footer></footer>
+  <script src="main.js"></script>
+</body>
+</html>

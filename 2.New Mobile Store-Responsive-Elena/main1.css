@@ -1,0 +1,769 @@
+/* Resetiranje na site default -ni vrednosti */
+*{
+  margin: 0;
+  padding: 0;
+}
+/* First-section */
+
+.hidden-container{
+  display: none;
+}
+.customer-container{
+  width: 100%;
+  background-color: black;
+  color:white;
+  font-size: 13px;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+}
+.support{
+  font-weight:bold;
+}
+.wishList{
+  display: flex;
+  flex-direction: row;
+  font-weight: bold;
+}
+.list{
+  padding-left: 30px;
+}
+/* Header-section-Logo-Nav bar */ 
+
+.logoNavBar-container{
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  padding: 30px 0;
+}
+.navBar-Container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.navBar-Container a{
+  color:black;
+  font-size: 17px;
+  font-weight: bold;
+  padding:0px 10px;
+  text-decoration: none;
+}
+
+.navBar-Container a:hover{
+  color: #b5090c;
+  font-weight: bold;
+}
+
+.icons-Container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.imageIcon{
+  padding:0 10px;
+  cursor: pointer;
+}
+/* 1.First-Section Background image with phone image inside */
+.first-section{
+  margin-top: 50px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.backgroundImg{
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+}
+.imgMobPhoneInsideBackground{
+  position: absolute;
+  width: 30%;
+  height: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  left: 900px;
+}
+.textInsideImg{
+position: absolute;
+top: 170px;
+left: 160px;
+color:white;
+}
+.textInsideImg h3{
+font-size: 50px;
+font-weight: bold;
+cursor: pointer;
+}
+.Iphone15ProMaxRegularPrice{
+  font-size: 18px;
+  text-decoration: line-through;
+  font-family: "Montserrat-Variable";
+  color:white;
+  font-weight: bold;
+}
+.Iphone15ProMaxDiscountPrice{
+  font-size: 20px;
+  font-family: "Montserrat-Variable";
+  color: red;
+  font-weight: bold;
+}
+.btnFindMore{
+  border-radius: 20px;
+  border: 2px solid #9D1C1F;
+  background-color:#9D1C1F;
+  height: 50px;
+  width: 150px;
+  margin-top: 20px;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+.textFindMore{
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+
+/* .first-section{
+  margin-top: 50px;
+  position: relative;
+}
+.hero-shot{
+  background-image: url(images/image-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 100%;
+  height: 75vh;
+  margin-bottom: 100px;
+}
+.imgMobPhoneInsideBackground{
+  position: absolute;
+    top: 25px;
+    left: 850px;
+    width: 450px;
+    height: 450px;
+    cursor: pointer;
+}
+.textInsideImg{
+position: absolute;
+top: 170px;
+left: 160px;
+color:white;
+}
+.textInsideImg h3{
+font-size: 50px;
+font-weight: bold;
+cursor: pointer;
+}
+.Iphone15ProMaxRegularPrice{
+  font-size: 18px;
+  text-decoration: line-through;
+  font-family: "Montserrat-Variable";
+  color:white;
+  font-weight: bold;
+}
+.Iphone15ProMaxDiscountPrice{
+  font-size: 20px;
+  font-family: "Montserrat-Variable";
+  color: red;
+  font-weight: bold;
+}
+.btnFindMore{
+  border-radius: 20px;
+  border: 2px solid #9D1C1F;
+  background-color:#9D1C1F;
+  height: 50px;
+  width: 150px;
+  margin-top: 20px;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+.textFindMore{
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+} */
+
+/*2.Second Section Najnovi Proizvodi */
+
+/* .second-section{
+  margin:50px 0;
+  position: relative;
+} */
+/* .second-section h1{
+  position: absolute;
+  top: 20px;
+  left: 139px;
+  font-size:27px;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color:black;
+  height: 50px;
+} */
+
+/* 2.Product-Container Section  */
+
+#newProducts-container{
+  background-color:white;
+  padding-top: 150px;
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   column-gap: 20px;
+   row-gap: 20px;
+}
+.img-product{
+  cursor: pointer;
+  padding-bottom: 10px;
+}
+#newProducts-container h2{
+   font-size:20px;
+   color:rgb(97, 91, 91);
+   font-weight: 400; 
+   cursor: pointer;
+   padding-bottom: 5px;
+}
+.regularPrice{
+  font-weight: bold;
+  text-decoration: line-through;
+  color:#aaa;
+  font-size: 18px;
+  padding-bottom: 5px;
+}
+.priceDiscount{
+  color:red;
+  font-weight:bold;
+  padding-left: 3px;
+  font-size: 18px;
+}
+#newProducts-container button{
+  background-color: black;
+  color:white;
+  border-radius: 18px;
+  border: 2px solid;
+  width: 80px;
+  height: 30px;
+  font-weight: bold;
+  font-size: 13px;
+  cursor: pointer;
+  border-color:white;
+  margin-top: 15px;
+  letter-spacing: 1px;
+}
+#newProducts-container button:hover{
+  color:black;
+  background-color: white;
+  border-color: black;
+  font-weight:bold;
+}
+.img-box{
+  border-radius: 15px;
+  box-shadow: 8px 4px 8px #d8d3d3;
+  height: 400px;
+  width: 250px;
+  padding-top: 20px;
+  background-color: rgba(241, 235, 235, 0.527);
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+.phoneModel{
+  font-weight: bold !important;
+}
+
+/* 3.Third-Section All Types of Service */
+
+.third-section-container h3{
+  margin-bottom: 80px;
+  margin-top: 150px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 27px;
+  letter-spacing: 1px;
+}
+.third-section{
+  display:grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 20px;
+  row-gap: 20px;
+  margin: 50px 0;
+  text-align: center;
+}
+
+.alignmentHeadingImage{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.alignmentHeadingImage img{
+  cursor: pointer;
+}
+.paragraph{
+  font-size:18px;
+  font-weight: bold;
+  color:rgb(58, 58, 58);
+  margin: 10px 0;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+.line{
+  border-bottom: 3px solid red;
+  width:45px;
+}
+/* 4.Fourth Section Form for Service */
+
+.fourth-section{
+  
+  position: relative;
+  }
+  .fourth-section img{
+    width: 100%;
+    height: 550px;
+  }
+  .form-container{
+    position: absolute;
+    top:100px;
+    left:180px;
+    color: rgb(158, 74, 74);
+  }
+  .formBox{
+    display: flex;
+    flex-direction: column;
+  }
+  .nameInput{
+    width: 523.4px;
+    height: 35px;
+    margin-bottom: 20px;
+    color:#d8d3d3;
+    font-size: 16px;
+    border-radius: 8px;
+    padding-left: 10px;
+    letter-spacing: 1px;
+  }
+  .input-container{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+  }
+  .contactInput{
+    width: 250.2px;
+    height: 35px;
+    margin-right: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+    padding-left: 10px;
+    color:#d8d3d3;
+    letter-spacing: 1px;
+  }
+  .emailInput{
+    width: 250.2px;
+    height: 35px;
+    color:#d8d3d3;;
+    font-size: 16px;
+    border-radius: 8px;
+    padding-left: 10px;
+    letter-spacing: 1px;
+  }
+  .deviceInput{
+    width: 380px;
+    height: 35px;
+    margin-bottom: 20px;
+    color:#d8d3d3;
+    font-size: 16px;
+    border-radius: 8px;
+    padding-left: 10px;
+    letter-spacing: 1px;
+  }
+  .descriptionInput{
+    width: 523px;
+    height: 100px;
+    margin-bottom: 20px;
+    color:#d8d3d3;
+    font-size: 16px;
+    border-radius: 8px;
+    padding-left: 10px;
+    letter-spacing: 1px;
+  }
+  .form-container button{
+    border-radius: 20px;
+    border: 2px solid;
+    background-color:#9D1C1F;
+    height: 50px;
+    width: 170px;
+    margin-top: 20px;
+    letter-spacing: 1px;
+    padding:0 5px;
+  }
+  /* 5.Fifth section - Latest News Technology */
+
+.news-container{
+  margin-top: 150px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.news-container h2{
+  padding: 30px 70px;
+  height: 84.4px;
+}
+.news-container p{
+  width: 350px;
+  
+}
+.img-news{
+  border: 1px solid #beb9b9;
+  padding: 0px 10px;
+ 
+}
+.img-new{
+  width:370px;
+  height:351.6px;
+}
+.img-con{
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+}
+/* 6.Sixth section - Tecnology Info */
+
+.iphoneXrContainer{
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  width: 90%;
+  margin: 150px auto;
+ }
+ .iphoneXrContainer img{
+  width: 100%;
+   flex:2 1 0;
+   height: 400px;
+ }
+ .textContainer{
+   padding-left: 50px;
+   padding-right: 50px;
+   color: white;
+   background-color: black;
+   height: 400px;
+ }
+ .textContainer p{
+  
+  padding-bottom: 20px;
+  padding-top: 50px;
+   font-size: 20px;
+   flex: 1 1 0;
+ }
+ .iphoneXrContainer h2{
+   font-size: 25px;
+   padding-top: 80px;
+   font-size: 30px;
+ }
+ .btnFindOutMore{
+  border: 2px solid #b5090c;
+  width: fit-content;
+  height: 40px;
+  letter-spacing: 2px;
+  padding: 10px;
+  font-size:13px;
+  border-radius: 20px;
+  background-color:#b5090c;
+  color: white;
+ }
+
+ /* 7.Seveenth-Section Footer-Contact info */
+
+.contact-container{
+  background-color:white;
+  width:100%;
+  height: 550px;
+  position: relative;
+}
+.logo-container{
+  position: absolute;
+  left:560px;
+  margin-top:50px;
+}
+.logo-container img{
+  width:400px;
+  height: 100px;
+}
+.text-img{
+  color:black;
+  margin-left:120px;
+  font-size: 15px;
+  font-family: "Montserrat-Variable";
+  font-weight: bold;
+}
+.text-info{
+  position: absolute;
+  top: 225px;
+  left: 235px;
+}
+.text-info{
+  display: flex;
+  flex-direction: row;
+  background-color:black;
+  position: absolute;
+  font-weight: bold;
+  font-family: "Montserrat-Variable";
+  border: 2px solid #d8d3d3!important;
+  width:1050px;
+  height:100px;
+  color: #9E9E9E;
+  box-shadow:10px 8px 8px #b8b3b3;
+}
+.contactInfoContainer{
+  position: relative;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size:18px;
+  padding-top: 24.8px;
+}
+.lineDesign::before{
+  content:'';
+  position: absolute;
+  right:0;
+  height:50%;
+  width:2px;
+  background-color:#d8d3d3;
+  padding-left: 0.5px;
+}
+.contactInfoContainer span{
+  padding-bottom:10px; 
+  height: 18px;
+}
+.contactInfoContainer p{
+  cursor: pointer;
+}
+.contactInfoContainer p:hover{
+color: white;
+font-weight: bold;
+}
+.contactNum{
+  cursor: pointer;
+}
+.contactNum:hover{
+  color: white;
+font-weight: bold;
+}
+
+.socialMedia-img{
+  display: flex;
+  flex-direction: row;
+}
+.socialMedia-img img{
+  width: 25px;
+  height: 25px;
+  padding-right: 5px;
+  padding-left:5px;
+}
+.socialMedia{
+  cursor: pointer;
+}
+.socialMedia:hover{
+  color: white;
+  font-weight: bold;
+}
+.address{
+  position:absolute;
+  top:350px;
+  left: 639.40px;
+  font-size:18px;
+  margin-top: 10px;
+} 
+
+/* Media Query Responsive CSS */
+
+@media(max-width:768px){
+  .customer-container{
+    font-size: 9px;
+  }
+  .navBar-Container a{
+    font-size: 10px;
+  }
+  .logo{
+    width: 100px;
+    height: 60px;
+  }
+  .third-section{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .form-container{
+    left:100px;
+  }
+  .news-container{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 30px;
+  }
+  .img-new{
+    width: 200px;
+    height: 130px;
+  }
+  .news-container p {
+    width: 200px;
+  }
+  .third-section{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .iphoneXrContainer{
+    display: flex;
+    flex-direction: column;
+  }
+  .textContainer p{
+    font-size: 15px;
+    padding-bottom: 50px;
+  }
+}
+@media(min-width:479px) and (max-width:768px){
+  /* .imgMobPhoneInsideBackground{
+    display: none;
+  } */
+  .textInsideImg{
+    left:100px;
+  }
+  .imgMobPhoneInsideBackground{
+    width: 200px;
+    height: 200px;
+    left: 250px;
+    top:200px;
+  }
+  .textInsideImg h3{
+    font-size: 25px;
+  }
+}
+
+
+
+
+@media(max-width:480px){
+  .icons-Container{
+    display: none;
+    }
+    .navBar-Container a{
+      padding:0px 2px;
+    }
+    .logo{
+      width: 70px;
+      height: 30px;
+    }
+    #newProducts-container{
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      row-gap: 50px;
+      column-gap: 50px;
+    }
+    .form-container{
+      left:0px;
+    }
+    .news-container{
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      row-gap: 30px;
+    }
+    .third-section{
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .iphoneXrContainer img{
+      height: 300px;
+    }
+    .textContainer{
+      height: 300px;
+    }
+    .textContainer p{
+      padding-bottom: 25px;
+      padding-top: 20px;
+      font-size: 15px;
+    }
+    .textContainer h2{
+      font-size: 20px;
+     padding-top: 30px;
+    }
+    .iphoneXrContainer{
+      display: flex;
+      flex-direction: column;
+    }
+    .btnFindOutMore{
+      height: 30px;
+    }
+    
+  }
+  @media(max-width:320px){
+    .textContainer p{
+      padding-bottom: 25px;
+      padding-top: 20px;
+      font-size: 10px;
+    }
+   
+  }
+  @media (min-width:320px) and (max-width:479px){
+    .imgMobPhoneInsideBackground{
+      display: none;
+    }
+    .textInsideImg h3{
+      font-size: 15px;
+    }
+    .textInsideImg{
+      left:100px;
+    }
+    .hidden-container{
+      display: block;
+      background-color: #9D1C1F;
+      width: 50%;
+      height: 300px;
+    }
+  }
+@media (min-width: 768px) and (max-width: 1200px){
+  #newProducts-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 50px;
+    column-gap: 30px;
+  }
+  .news-container{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      row-gap: 30px;
+    }
+    .textContainer p {
+      font-size: 13px;
+      padding-bottom: 50px;
+    }
+    .textContainer h2{
+      font-size: 20px;
+    }
+    .imgMobPhoneInsideBackground{
+      height: 280px;
+      left: 450px;
+    }
+    .textInsideImg{
+    left: 100px;
+    }
+    .textInsideImg h3{
+    font-size: 35px;
+    }
+    
+  }
+   
+  @media (min-width: 480px) and (max-width: 768px){
+    #newProducts-container{
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      row-gap: 50px;
+      column-gap: 50px;
+    }
+  }

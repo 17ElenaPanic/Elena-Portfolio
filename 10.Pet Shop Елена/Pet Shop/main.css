@@ -1,0 +1,849 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "Anton Regular";
+  src: url(/fonts/Anton-Regular.woff);
+}
+@font-face {
+  font-family: "Roboto Regular";
+  src: url(/fonts/Roboto-Regular.woff);
+}
+@font-face {
+  font-family: "Roboto Bold";
+  src: url(/fonts/Roboto-Bold.woff);
+}
+header .info-container {
+  background-color: rgb(255, 147, 0);
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 150px;
+  color: #ffea90;
+  font-weight: bold;
+  font-family: "Roboto Bold";
+  font-size: 19px;
+  cursor: pointer;
+}
+header .info-container span:hover {
+  color: yellow;
+}
+header .info-container .account:hover {
+  color: yellow;
+}
+header .info-container .wishList {
+  padding-right: 50px;
+}
+header .info-container .wishList:hover {
+  color: yellow;
+}
+header .logoNavBarSection {
+  cursor: pointer;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+header .logoNavBarSection .navBarContainer {
+  display: flex;
+  align-items: center;
+}
+header .logoNavBarSection .navBarContainer button {
+  font-family: "Roboto Bold";
+  font-size: 19px;
+  padding: 8px;
+  margin-right: 10px;
+  border: none;
+  background-color: white;
+}
+header .logoNavBarSection .navBarContainer button:hover {
+  background-color: rgb(59, 140, 156);
+  color: white;
+  border-radius: 30px;
+}
+header .logoNavBarSection .cartContainer {
+  display: flex;
+  align-items: center;
+}
+header .logoNavBarSection .cartContainer span {
+  font-family: "Roboto Bold";
+  font-size: 19px;
+}
+header .logoNavBarSection .cartContainer img {
+  padding-right: 10px;
+}
+header .discountContainer {
+  padding-top: 150px;
+  margin-top: 10px;
+  background-image: url(../images/foodForPetsBg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 590px;
+}
+header .discountContainer .btn-discount {
+  cursor: pointer;
+  width: 200px;
+  background-color: transparent;
+  border: 1px solid rgb(217, 217, 217);
+  border-radius: 4px;
+  padding: 5.5px 3px;
+  margin-top: 10px;
+  margin-left: 100px;
+  color: rgb(251, 245, 245);
+  text-transform: uppercase;
+  letter-spacing: 1.8px;
+  font-size: 16px;
+  font-family: "Roboto Bold";
+}
+header .discountContainer h1 {
+  margin-top: 20px;
+  margin-left: 100px;
+  width: 300px;
+  font-size: 50px;
+  color: white;
+  font-family: "Anton Regular";
+  font-weight: bold;
+  letter-spacing: 2px;
+  word-spacing: 5px;
+  cursor: pointer;
+  color: #1d7372;
+}
+header .discountContainer p {
+  margin-top: 20px;
+  margin-left: 100px;
+  width: 375px;
+  color: white;
+  font-size: 19px;
+  font-family: "Roboto Bold";
+  cursor: pointer;
+}
+header .discountContainer button {
+  margin-left: 100px;
+  margin-top: 30px;
+  background-color: rgb(255, 147, 0);
+  border-radius: 15px;
+  width: 100px;
+  padding: 9px;
+  text-transform: uppercase;
+  font-size: 13px;
+  border: none;
+  color: rgb(251, 245, 245);
+  font-family: "Roboto Bold";
+  font-weight: bold;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+header .discountContainer button:hover {
+  background-color: #1d7372;
+}
+
+main .img-search-container {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+main .img-search-container .img-paw {
+  margin: 50px 150px;
+  cursor: pointer;
+}
+main .img-search-container .searchContainer {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 50px;
+}
+main .img-search-container .searchContainer h2 {
+  text-transform: capitalize;
+  margin-bottom: 30px;
+  font-family: "Roboto Bold";
+  font-size: 24px;
+  cursor: pointer;
+}
+main .img-search-container .searchContainer p {
+  cursor: pointer;
+  color: #7f7272;
+  font-weight: bold;
+  font-size: 16px;
+  font-family: "Roboto Regular";
+}
+main .img-search-container .searchContainer .btns {
+  padding-top: 30px;
+}
+main .img-search-container .searchContainer .btns .btn-search {
+  cursor: pointer;
+  width: 400px;
+  margin-bottom: 50px;
+  border: none;
+  background-color: rgb(255, 147, 0);
+  color: white;
+  font-family: "Roboto Bold";
+  font-size: 13px;
+  border-radius: 15px;
+  padding: 0 50px 0 0;
+  white-space: nowrap;
+}
+main .img-search-container .searchContainer .btns .btn-search span {
+  background-color: white;
+  border-radius: 52px 0 0 50px;
+  display: inline-block;
+  padding: 6px;
+  margin-right: 15px;
+  color: grey;
+  border: 1.2px solid rgba(200, 186, 186, 0.8117647059);
+  width: 300px;
+  cursor: pointer;
+}
+main .heading-category {
+  text-align: center;
+  font-family: "Roboto Bold";
+  font-size: 24px;
+}
+main .categories {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  margin: 50px 350px;
+  margin-bottom: 90px;
+}
+main .categories .food-category {
+  width: 150px;
+  height: 150px;
+  background-color: rgb(255, 147, 0);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+}
+main .categories .food-section {
+  display: flex;
+  flex-direction: column;
+}
+main .categories .food-category-heading {
+  display: flex;
+  justify-content: center;
+}
+main .categories .food-category-heading button {
+  text-align: center;
+  font-family: "Roboto Regular";
+  margin-top: 15px;
+  font-size: 19px;
+  padding: 8px;
+  margin-right: 10px;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+}
+main .categories .food-category-heading button:hover {
+  background-color: rgb(255, 147, 0);
+  color: white;
+  border-radius: 30px;
+  font-weight: bold;
+}
+main .headingTrendingProducts {
+  text-align: center;
+  font-family: "Roboto Bold";
+  font-size: 24px;
+}
+main .trendingProducts {
+  margin: 70px 20px;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+main .trendingProducts .products-categories {
+  display: flex;
+  flex-direction: column;
+  padding-right: 70px;
+}
+main .trendingProducts .products-categories label {
+  padding-bottom: 5px;
+}
+main .trendingProducts .products-categories label button {
+  font-family: "Roboto Regular";
+  font-size: 19px;
+  padding: 10px 5px;
+  letter-spacing: 1px;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+}
+main .trendingProducts .products-categories label button:hover {
+  background-color: rgb(255, 147, 0);
+  width: 200px;
+  text-align: left;
+  color: white;
+  font-family: "Roboto Bold";
+}
+main .trendingProducts .products-categories label .btn-filter {
+  background-color: rgb(255, 147, 0);
+  width: 200px;
+  text-align: left;
+  color: white;
+  font-weight: bold;
+  font-family: "Roboto Regular";
+  cursor: pointer;
+}
+main .trendingProducts .products {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+main .trendingProducts .products .productContainer {
+  padding: 50px 50px;
+}
+main .trendingProducts .products .product-item {
+  padding-bottom: 60px;
+}
+main .trendingProducts .products .product-item .item {
+  display: flex;
+}
+main .trendingProducts .products .product-item .item .img-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-right: 20px;
+}
+main .trendingProducts .products .product-item .item .description-container p {
+  font-family: "Roboto Regular";
+}
+main .trendingProducts .products .product-item .item .description-container p span {
+  padding-left: 10px;
+  padding-right: 10px;
+  text-decoration: line-through;
+  color: rgb(255, 147, 0);
+  font-family: "Roboto Bold";
+}
+main .trendingProducts .products .product-item .item .description-container h2 {
+  padding-bottom: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Roboto Bold";
+}
+main .trendingProducts .products .product-item .item .description-container .description {
+  font-family: "Roboto Regular";
+  padding-left: 10px;
+  width: 150px;
+  padding-bottom: 10px;
+}
+main .galleryContainer {
+  display: flex;
+  margin: 50px 250px;
+  cursor: pointer;
+  justify-content: space-between;
+}
+main .galleryContainer .imgProductContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .galleryContainer .imgProductContainer .button-up {
+  border-radius: 20px;
+  width: 150px;
+  margin-top: 20px;
+  padding: 5px;
+  font-weight: bold;
+  border: none;
+  font-family: "Roboto Bold";
+  font-size: 19px;
+  cursor: pointer;
+}
+main .galleryContainer .imgProductContainer .button-down {
+  border-radius: 20px;
+  width: 150px;
+  margin-bottom: 20px;
+  padding: 5px;
+  font-weight: bold;
+  border: none;
+  font-family: "Roboto Bold";
+  font-size: 19px;
+  cursor: pointer;
+}
+main .galleryContainer .imgProductContainer .firstBtn {
+  background-color: rgb(196, 143, 45);
+  color: white;
+}
+main .galleryContainer .imgProductContainer .secondBtn {
+  background-color: rgba(165, 42, 42, 0.5);
+  color: white;
+}
+main .galleryContainer .imgProductContainer .thirdBtn {
+  background-color: rgb(96, 185, 236);
+  color: white;
+}
+main .galleryContainer .imgProductContainer .fourthBtn {
+  background-color: rgb(184, 102, 184);
+  color: white;
+}
+main .galleryContainer .imgProductContainer .lastBtn {
+  background-color: rgb(86, 148, 167);
+  color: white;
+}
+main .headingDeal {
+  margin: 50px 0;
+  text-align: center;
+  font-family: "Roboto Bold";
+  font-size: 24px;
+}
+main .imageBoxContainer {
+  cursor: pointer;
+  margin: 50px 380px;
+  display: flex;
+  justify-content: space-between;
+}
+main .imageBoxContainer .secondHeading {
+  padding-bottom: 8px;
+  font-family: "Roboto Regular";
+  font-size: 19px;
+}
+main .imageBoxContainer .informationContainer h2 {
+  margin-bottom: 5px;
+  font-family: "Roboto Bold";
+  font-size: 19px;
+}
+main .imageBoxContainer .review {
+  display: block;
+  display: flex;
+  flex-direction: column;
+}
+main .imageBoxContainer .review span {
+  cursor: pointer;
+}
+main .imageBoxContainer .review .price {
+  font-weight: bold;
+  font-size: 20px;
+}
+main .imageBoxContainer .review span {
+  padding-bottom: 8px;
+  font-family: "Roboto Regular";
+  font-size: 16px;
+}
+main .imageBoxContainer .counting {
+  display: flex;
+  padding-bottom: 8px;
+}
+main .imageBoxContainer .counting .count {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #dbd6d6;
+  margin-right: 5px;
+  background-color: #f0f0f0;
+  font-size: 13px;
+  width: 40px;
+  justify-content: center;
+  align-items: center;
+}
+main .imageBoxContainer .counting .count .num {
+  font-weight: bold;
+  font-size: 15px;
+}
+main .imageBoxContainer .counting .count span {
+  font-family: "Roboto Regular";
+  font-size: 16px;
+}
+main .imageBoxContainer .size {
+  padding-bottom: 8px;
+  display: block;
+  display: flex;
+}
+main .imageBoxContainer .size .sizeM {
+  background-color: black;
+  color: white;
+  font-family: "Roboto Regular";
+  font-size: 16px;
+  font-weight: bold;
+}
+main .imageBoxContainer .size .sizing {
+  border: 1px solid #9d9595;
+  margin-right: 5px;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 10px;
+  font-weight: bold;
+}
+main .imageBoxContainer .imgFoodContainer {
+  border: 1px solid #dbd6d6;
+  width: 400px;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+main .imageBoxContainer .colorContainer {
+  padding-bottom: 8px;
+  display: flex;
+}
+main .imageBoxContainer .colorContainer .firstColor {
+  background-color: white;
+}
+main .imageBoxContainer .colorContainer .secondColor {
+  background-color: purple;
+}
+main .imageBoxContainer .colorContainer .thirdColor {
+  background-color: pink;
+}
+main .imageBoxContainer .colorContainer .colorBox {
+  margin-right: 5px;
+  width: 25px;
+  height: 25px;
+  border: 1px solid #9d9595;
+}
+main .imageContainer {
+  display: flex;
+  justify-content: space-around;
+  margin: 100px 250px;
+}
+main .imageContainer .imgBox {
+  position: relative;
+}
+main .imageContainer .imgBox .firstLink {
+  position: absolute;
+  left: 300px;
+  top: 190px;
+  color: white;
+  font-family: "Roboto Bold";
+  cursor: pointer;
+}
+main .imageContainer .imgBox .headingPetFood {
+  position: absolute;
+  top: 70px;
+  left: 300px;
+  color: brown;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 25px;
+  font-family: "Roboto Bold";
+  font-size: 24px;
+}
+main .imageContainer .imgBox .headingTrendingPet {
+  position: absolute;
+  top: 90px;
+  left: 300px;
+  color: white;
+  letter-spacing: 1px;
+  font-size: 30px;
+  padding-top: 10px;
+  font-family: "Roboto Bold";
+}
+main .imageContainer .imgBox .btnDiscount {
+  position: absolute;
+  top: 130px;
+  left: 300px;
+  margin-top: 10px;
+  border-radius: 20px;
+  padding: 10px;
+  background-color: rgb(255, 147, 0);
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  font-family: "Roboto Bold";
+  cursor: pointer;
+}
+main .imageContainer .secondImgBox {
+  position: relative;
+}
+main .imageContainer .secondImgBox .secondHeadingPetFood {
+  position: absolute;
+  top: 70px;
+  left: 20px;
+  color: brown;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-size: 25px;
+  font-family: "Roboto Bold";
+}
+main .imageContainer .secondImgBox .secondHeadingTrendingPet {
+  position: absolute;
+  top: 90px;
+  left: 20px;
+  color: white;
+  letter-spacing: 1px;
+  color: white;
+  letter-spacing: 1px;
+  font-size: 30px;
+  padding-top: 10px;
+  font-family: "Roboto Bold";
+}
+main .imageContainer .secondImgBox .secondBtnDiscount {
+  position: absolute;
+  top: 130px;
+  left: 18px;
+  margin-top: 10px;
+  border-radius: 20px;
+  padding: 10px;
+  background-color: brown;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  font-family: "Roboto Bold";
+  cursor: pointer;
+}
+main .imageContainer .secondImgBox .secondLink {
+  position: absolute;
+  left: 30px;
+  top: 190px;
+  color: white;
+  font-family: "Roboto Bold";
+  cursor: pointer;
+}
+main .service-heading {
+  text-align: center;
+  font-family: "Roboto Bold";
+  font-size: 24px;
+}
+main .services {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 100px;
+}
+main .services .service-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-right: 30px;
+}
+main .services .service-container .imageCircle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 2px solid rgb(255, 147, 0);
+  cursor: pointer;
+}
+main .services .service-container .heading {
+  padding-top: 10px;
+  font-weight: bold;
+  font-family: "Roboto Bold";
+  font-size: 19px;
+  cursor: pointer;
+}
+main .services .service-container .prg {
+  text-align: center;
+  width: 250px;
+  padding-top: 10px;
+  color: grey;
+  font-weight: bold;
+  font-family: "Roboto Regular";
+  font-size: 16px;
+  cursor: pointer;
+}
+main .subscribe {
+  background-color: #e77a4b;
+  border-radius: 20px;
+  width: 70%;
+  height: 180px;
+  display: flex;
+  justify-content: space-around;
+  margin: 150px auto;
+  align-items: center;
+}
+main .subscribe .discount {
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 23px;
+  font-family: "Roboto Bold";
+}
+main .subscribe .discount .discount-price {
+  color: #e77a4b;
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+}
+main .subscribe .shopNow {
+  color: #fff6c7;
+  font-weight: bold;
+}
+main .subscribe .shopNow .headingWelcome {
+  padding-bottom: 5px;
+  font-family: "Roboto Bold";
+  font-size: 19px;
+}
+main .subscribe .shopNow .headingTnx {
+  font-family: "Roboto Bold";
+  font-size: 16px;
+}
+main .subscribe .shopNow .shop {
+  color: brown;
+  font-weight: bold;
+  padding-top: 5px;
+  font-family: "Roboto Bold";
+  font-size: 19px;
+}
+main .subscribe .shopNow .timeCount {
+  display: flex;
+  justify-content: space-around;
+}
+main .subscribe .shopNow .time {
+  padding-bottom: 5px;
+  display: flex;
+  flex-direction: column;
+}
+main .subscribe .shopNow .time .span {
+  font-family: "Roboto Bold";
+  font-size: 19px;
+}
+main .subscribe .newsletter {
+  color: #fff6c7;
+}
+main .subscribe .newsletter .headingSubscribe {
+  padding-bottom: 15px;
+  font-family: "Roboto Bold";
+  font-size: 19px;
+}
+main .subscribe .newsletter .secondHeadingSubscribe {
+  padding-top: 50px;
+  font-family: "Roboto Bold";
+  font-size: 19px;
+}
+main .subscribe .newsletter .btn-container {
+  padding-top: 20px;
+  cursor: pointer;
+}
+main .subscribe .newsletter .btn-container .btn-subscribe {
+  cursor: pointer;
+  width: 400px;
+  margin-bottom: 50px;
+  border: none;
+  background-color: black;
+  color: white;
+  font-family: "Roboto Bold";
+  font-size: 13px;
+  border-radius: 15px;
+  padding: 0 50px 0 0;
+  white-space: nowrap;
+}
+main .subscribe .newsletter .btn-container .btn-subscribe span {
+  background-color: #fff6c7;
+  color: black;
+  font-weight: bold;
+  border-radius: 52px 0 0 50px;
+  display: inline-block;
+  padding: 6px;
+  margin-right: 15px;
+  border: 1.2px solid rgba(200, 186, 186, 0.8117647059);
+  width: 300px;
+  cursor: pointer;
+}
+main .blogContainer {
+  display: flex;
+  justify-content: space-between;
+  margin: 100px 270px;
+}
+main .blogContainer .blogBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+main .blogContainer .blogBox p {
+  font-family: "Roboto Regular";
+  font-size: 16px;
+  cursor: pointer;
+}
+main .blogContainer .blogBox .thirdHeading {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: "Roboto Bold";
+  font-size: 19px;
+  cursor: pointer;
+}
+main .blogContainer .blogBox .dateContainer {
+  width: 100px;
+  height: 25px;
+  border-radius: 2px;
+  background-color: rgb(255, 147, 0);
+  position: absolute;
+  top: 2px;
+  left: 10px;
+  color: white;
+  font-weight: bold;
+  border: 2px solid yellow;
+}
+main .blogContainer .blogBox .date {
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  font-family: "Roboto Bold";
+}
+
+footer .footerContainer {
+  display: flex;
+  justify-content: space-between;
+  margin: 150px 140px;
+}
+footer .footerContainer .firstContainer {
+  padding-right: 100px;
+}
+footer .footerContainer .footerSection {
+  width: 280px;
+}
+footer .footerContainer .footerSection .social-media {
+  cursor: pointer;
+}
+footer .footerContainer .footerSection span {
+  font-family: "Roboto Regular";
+  cursor: pointer;
+}
+footer .footerContainer .footerSection .information {
+  display: block;
+  padding-bottom: 10px;
+  font-family: "Roboto Regular";
+}
+footer .footerContainer .footerSection .infoContainer .imgContainer {
+  margin-right: 5px;
+}
+footer .footerContainer .footerSection .logoImg {
+  padding-bottom: 15px;
+  cursor: pointer;
+}
+footer .footerContainer .footerSection .description-info {
+  padding-bottom: 15px;
+  font-family: "Roboto Regular";
+  cursor: pointer;
+}
+footer .footerContainer .footerSection .description-info img {
+  cursor: pointer;
+}
+footer .footerContainer .footerSection .aboutUsHeading {
+  padding-bottom: 15px;
+  cursor: pointer;
+}
+footer .footerContainer .footerSection span {
+  padding-bottom: 10px;
+}
+footer .footerContainer .footerSection .infoContainer {
+  display: flex;
+}
+footer .footerContainer .footerSection .infoContainer .imgContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  background-color: rgb(255, 147, 0);
+}
+footer .footerContainer .secondFooterSection {
+  display: flex;
+  flex-direction: column;
+}/*# sourceMappingURL=main.css.map */

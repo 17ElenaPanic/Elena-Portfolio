@@ -1,0 +1,496 @@
+// Mixins
+@use "sass:math";
+
+//functions for responsive mixins
+@function breakpoint-next($name, $breakpoints: $grid-breakpoints, $breakpoint-names: map-keys($breakpoints)) {
+  $n: index($breakpoint-names, $name);
+  @return if($n < length($breakpoint-names), nth($breakpoint-names, $n + 1), null);
+}
+
+@function breakpoint-min($name, $breakpoints: $grid-breakpoints) {
+  $min: map-get($breakpoints, $name);
+  @return if($min !=0, $min, null);
+}
+
+@function breakpoint-max($name, $breakpoints: $grid-breakpoints) {
+  $next: breakpoint-next($name, $breakpoints);
+  @return if($next, breakpoint-min($next, $breakpoints) - .02px, null);
+}
+
+@function breakpoint-infix($name, $breakpoints: $grid-breakpoints) {
+  @return if(breakpoint-min($name, $breakpoints)==null, '', '#{$name}');
+}
+
+
+// ------------------
+// Responsive mixins
+// -------------------
+@mixin media-up($name, $breakpoints: $grid-breakpoints) {
+  $min: breakpoint-min($name, $breakpoints);
+
+  @if $min {
+
+    @media (min-width: $min) {
+      @content;
+    }
+  }
+
+  @else {
+    @content;
+  }
+}
+
+@mixin media-down($name, $breakpoints: $grid-breakpoints) {
+  $min: breakpoint-min($name, $breakpoints);
+  $current: map-get($breakpoints, $name);
+  $current-max: $current - .02px;
+
+  @if $min {
+
+    @media (max-width: $current-max) {
+      @content;
+    }
+  }
+
+  @else {
+    @content;
+  }
+}
+
+@mixin media-between($lower, $upper, $breakpoints: $grid-breakpoints) {
+  $min: breakpoint-min($lower, $breakpoints);
+  $max: breakpoint-max($upper, $breakpoints);
+  $current-upper: map-get($breakpoints, $upper);
+  $current-upper-max: $current-upper - .02px;
+
+  @if $min !=null {
+
+    @media (min-width: $min) and (max-width: $current-upper-max) {
+      @content;
+    }
+  }
+
+  @else if $min==null {
+
+    @include media-down($upper, $breakpoints) {
+      @content;
+    }
+  }
+}
+//mixin screen sizes breakpoints
+$grid-breakpoints: ("xs": 576px,
+  "s": 768px,
+  "m":992px,
+  "l":1024px,
+  "xl": 1280px,
+);
+//RESET
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+p,
+a,
+img,
+i,
+ul,
+li,
+form,
+label,
+article,
+canvas,
+footer,
+header,
+menu,
+nav,
+section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  line-height: 1;
+}
+
+ul {
+  list-style: none;
+}
+
+a img {
+  border: none;
+}
+
+article,
+footer,
+header,
+main,
+nav,
+section {
+  display: block;
+}
+
+button {
+  background: none;
+  border: none;
+
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
+
+  &:active {
+    outline: none;
+    box-shadow: none;
+  }
+}
+
+input {
+  background: none;
+  border: none;
+
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
+
+  &:active {
+    outline: none;
+    box-shadow: none;
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  color: initial;
+  text-decoration: none;
+}
+
+select {
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
+
+  &:active {
+    outline: none;
+    box-shadow: none;
+  }
+}
+//Fonts
+
+@font-face {
+  font-family: "Nanum Regular";
+  src: url(../fonts/NanumMyeongjo-Regular.woff2);
+}
+@font-face {
+  font-family: "Nanum Bold";
+  src: url(../fonts/NanumMyeongjo-Bold.woff2);
+}
+@font-face {
+  font-family: "Nanum Extra Bold";
+  src: url(../fonts/NanumMyeongjo-ExtraBold.woff2);
+}
+@font-face {
+font-family: "Courgette Regular";
+src: url(../fonts/Courgette-Regular.woff);
+}
+@font-face{
+  font-family: "Freeman Regular";
+  src: url(../fonts/Freeman-Regular.woff2);
+}
+//Variables
+$color-black:#000;
+$color-white:#fff;
+$color-light-gray:#c7c7c7;
+$color-gray:#757575;
+$color-red:#d90429;
+
+$nanum-regular:"Nanum Regular";
+$nanum-bold:"Nanum Bold";
+$nanum-extra-bold:"Nanum Extra Bold";
+$courgette-regular:"Courgette Regular";
+$freeman-regular:"Freeman regular";
+
+
+//SCSS Styles
+//Header
+header{
+  display: flex;
+  padding: 10px 30px;
+  background-color: $color-black;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 20;
+ nav{
+  a{
+    color: $color-white;
+    font-family:$nanum-regular;
+    text-transform: uppercase;
+    margin: 0 15px;
+  }
+  
+ }
+}
+//Main
+main{
+  .hero-shot{
+    background-image: url(../images/viber_image_2024-04-27_12-24-53-695.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: calc(100vh - 45px);
+    background-position: center;
+    position: relative;
+
+    .hero-overlay{
+      background-color: $color-black;
+      opacity: 0.75;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+  }
+  .reserve-table{
+    padding: 30px 0;
+    width: 100%;
+  
+    h3{
+      font-family: $nanum-extra-bold;
+      font-size: 20px;
+      text-transform: uppercase;
+      tab-size: 4;
+      letter-spacing: 0.15px;
+      margin: 10px auto;
+      text-align: center;
+  
+      &:after{
+        content: "";
+        display: block;
+        width: 80%;
+        height: 2px;
+        border-radius: 30px;
+        background-color: $color-red;
+        margin: 5px auto;
+      }
+    }
+  
+      form{
+        display: flex;
+        flex-wrap: wrap;
+        background-color: $color-black;
+      }
+      .input-pair{
+        width: 50%;
+        padding: 15px;
+        color:$color-white;
+        background-color: $color-black;
+        display: flex;
+        justify-content: center;
+
+        // p{
+
+        // }
+
+        input{
+          color: $color-white;
+          font-family: $nanum-bold;
+        }
+        &.pair-short{
+          display: flex;
+          align-items: center;
+        }
+        input[type="text"]{
+          max-width: 300px;
+            width: 100%;
+            border-bottom:1px solid $color-white;
+            padding: 5px 0;
+            caret-color: $color-red;
+          &::placeholder{
+            color: $color-white;
+            font-size: 14px;
+            line-height: 20px;
+            
+          }
+          &:focus-within{
+            border-bottom: 1px solid $color-red;
+          }
+        }
+        input[type="date"] {
+          filter: brightness(0) saturate(100%) invert(100%) sepia(3%) saturate(13%) hue-rotate(81deg) brightness(106%) contrast(106%);
+        }
+        input[type="range"]{
+          width:150px;
+          -webkit-appearance: none;
+          background-color: $color-white;
+          border-radius: 10px;
+
+          // &:-webkit-slider-thumb{
+          //   appearance: none;
+          //   // -webkit-appearance: none;
+          //   background-color: #d90429;
+          // }
+        }
+       
+      }
+      input[type="submit"]{
+        background-color: $color-red;
+        color: $color-white;
+        cursor: pointer;
+        text-transform: uppercase;
+      }
+      .submit{
+        padding: 5px 30px;
+        border-radius: 10px;
+        margin: 10px auto;
+      }
+    }
+    .product-menu {
+      h3 {
+        display: flex;
+        font-family: $courgette-regular;
+        font-weight: bold;
+        font-size: 25px;
+        color: $color-red;
+        justify-content: center;
+        cursor: pointer;
+
+        &:before,
+        &:after {
+          content: "";
+          flex: 1 1;
+          border-bottom: 2px solid;
+          margin: auto;
+        }
+    
+        &:before {
+          margin-left: 480px;
+          margin-right: 8px;
+        }
+    
+        &:after {
+          margin-right: 480px;
+          margin-left: 8px;
+        }
+      }
+     
+
+      .second-heading {
+        font-size: 35px;
+        color: $color-black;
+        text-align: center;
+        font-family: $freeman-regular;
+        padding-top: 20px;
+        cursor: pointer;
+      }
+  
+      .food-list {
+        display: flex;
+        justify-content: center;
+        padding-top: 50px;
+  
+        .food-type {
+          display: flex;
+          padding-bottom: 20px;
+
+          .icon-img{
+            cursor: pointer;
+            margin:0 5px;
+          }
+  
+          .food {
+            display: flex;
+            flex-direction: column;
+            font-family: $freeman-regular;
+            cursor: pointer;
+  
+            .food-item {
+              padding-top: 5px;
+              padding-bottom: 5px;
+              color: $color-gray;
+            }
+  
+            .typeOfFood {
+              font-weight: bold;
+              color: $color-black;
+            }
+          }
+        }
+      }
+      .allFoodContainer{
+        padding-top: 50px;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 50px;
+
+        .food-container{
+          width: 500px;
+          padding: 0 20px;
+
+          .breakfast-container {
+            display: flex;
+            padding-bottom: 20px;
+      
+            .foodImg {
+              cursor: pointer;
+              margin-right: 20px;
+            }
+      
+            .description {
+              display: flex;
+              flex-direction: column;
+      
+              p {
+                padding-top: 8px;
+                font-style: italic;
+                font-family: $nanum-bold;
+                font-size: 15px;
+                cursor: pointer;
+              }
+      
+              .price-container {
+                display: flex;
+                border-bottom: 1px solid rgb(205, 200, 200);
+                padding-bottom: 8px;
+                align-items: center;
+      
+                h2 {
+                  font-size: 15px;
+                  font-weight: bold;
+                  font-family: $freeman-regular;
+                  letter-spacing: 0.8px;
+                  cursor: pointer;
+                }
+      
+                span {
+                  margin-left: auto;
+                  color: $color-red;
+                  font-size: 20px;
+                  font-weight: bold;
+                  cursor: pointer;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+}
+
+
+

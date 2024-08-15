@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="-30 -4.5 88.7 159.5" style="enable-background:new -30 -4.5 88.7 159.5;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#000000;stroke-width:1.5152;stroke-miterlimit:10;}
+	.st1{fill:none;stroke:#000000;stroke-width:0.9413;stroke-miterlimit:10;}
+	.st2{font-family:'CeraPro-Medium';}
+	.st3{font-size:4.3779px;}
+</style>
+<path id="XMLID_2012_" class="st0" d="M49.6,152.7h-70.5c-4.3,0-7.9-3.5-7.9-7.9V5.2c0-4.3,3.5-7.9,7.9-7.9h70.5
+	c4.3,0,7.9,3.5,7.9,7.9v139.7C57.5,149.2,53.9,152.7,49.6,152.7z"/>
+<g id="XMLID_1993_">
+	<rect id="XMLID_1995_" x="5.2" y="5.8" class="st1" width="25.2" height="2.4"/>
+	<circle id="XMLID_1994_" class="st1" cx="0.1" cy="7" r="1.8"/>
+</g>
+<path id="XMLID_1992_" class="st1" d="M46.1,136.2h-63.5c-2.6,0-4.6-2.1-4.6-4.6V18.9c0-2.6,2.1-4.6,4.6-4.6h63.6
+	c2.6,0,4.6,2.1,4.6,4.6v112.7C50.7,134.2,48.7,136.2,46.1,136.2z"/>
+<circle id="XMLID_1991_" class="st1" cx="13.5" cy="144.6" r="4.8"/>
+<text transform="matrix(1 0 0 1 -16.1343 39.1485)"><tspan x="0" y="0" class="st2 st3">&lt;!DOCTYPE HTML&gt;</tspan><tspan x="0" y="5.3" class="st2 st3">&lt;html&gt;</tspan><tspan x="0" y="15.8" class="st2 st3">&lt;body&gt;</tspan><tspan x="0" y="26.3" class="st2 st3">  &lt;p&gt;Before the script...&lt;/p&gt;</tspan><tspan x="0" y="36.8" class="st2 st3">  &lt;script&gt;</tspan><tspan x="0" y="42" class="st2 st3">    alert( &apos;Hello, world!&apos; );</tspan><tspan x="0" y="47.3" class="st2 st3">  &lt;/script&gt;</tspan><tspan x="0" y="57.8" class="st2 st3">  &lt;p&gt;...After the script.&lt;/p&gt;</tspan><tspan x="0" y="68.3" class="st2 st3">&lt;/body&gt;</tspan><tspan x="0" y="78.8" class="st2 st3">&lt;/html&gt;</tspan></text>
+</svg>
